@@ -4,7 +4,7 @@ Introductory paragraph (replace this with your text)
 
 ## Summary
 
-Tutorial explaining the  regex email validation .
+Tutorial explaining the different regex components  for email validation .
 
 ````
 /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
