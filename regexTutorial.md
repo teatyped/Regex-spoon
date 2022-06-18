@@ -1,6 +1,4 @@
-# Title (replace with your title)
-
-Introductory paragraph (replace this with your text)
+# Regex explanation for validation of email address
 
 ## Summary
 
@@ -15,40 +13,52 @@ Tutorial explaining the different regex components  for email validation .
 
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
-- [OR Operator](#or-operator)
-- [Character Classes](#character-classes)
-- [Flags](#flags)
-- [Grouping and Capturing](#grouping-and-capturing)
-- [Bracket Expressions](#bracket-expressions)
-- [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
+- [Escaped Character](#escaped-Character)
+
 
 ## Regex Components
 
+````
+Component Explanation for [a-z0-9_\.-] 
+
+- matches all lowercase characters from a to z
+- matches all numeric characters from 0 to 9
+- matches special characters such as `_`, `-`, and `.`
+
+````
+````
+Component Explanation for [\da-z\.-]
+
+- `\d` matches for any decimal digit
+- matches all lowercase characters from a to z
+- matches special characters such as `.` and `-`
+````
+````
+Explanation for [a-z\.]
+
+- matches all lowercase characters from a to z
+- matches special character, `.`
+````
+
+
 ### Anchors
+- ````^ $ ````     Start / end of the string
+- ````\b\B````	    word, not-word boundary
 
 ### Quantifiers
+- ````a*a+a?````	   0 or more, 1 or more, 0 or 1
+- ````a{5}a{2,}	````   exactly five, two or more
+- ````a{1,3}````	    between one & three
+- ````a+?a{2,}?	````    match as few as possible
+- ````ab|cd	 ````       match ab or cd
 
 ### OR Operator
 
-### Character Classes
+### Escaped Character
+- ````\.\*\\ ```` escaped special characters
+- ````\t\n\r````    Tab, linefeed, carriage return
 
-### Flags
-
-### Grouping and Capturing
-
-### Bracket Expressions
-
-### Greedy and Lazy Match
-
-### Boundaries
-
-### Back-references
-
-### Look-ahead and Look-behind
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Khai Truong
